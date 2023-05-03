@@ -8,9 +8,10 @@ conectaBancoDeDados();
 const Mulher = require('./mulherModel');
 
 const app = express();
-app.use(express.json())
-const porta = 3333;
+app.use(express.json());
 app.use(cors());
+
+const porta = 3333;
 
 //Method GET
 async function mostraMulheres(request, response) {
